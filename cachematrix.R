@@ -2,7 +2,8 @@
 ##calculated, it returns the result of the first calculation
 
 #To execute these functions type create a matriz enviroment, for example:
-#m <- makeCacheMatrix(matrix(c(1, 2, 3, 4), nrow=2,ncol=2))
+m <- makeCacheMatrix(matrix(c(1, 2, 3, 4), nrow=2,ncol=2))
+
 #Then run the functions codes below
 
 makeCacheMatrix <- function(x = numeric()) {
@@ -30,10 +31,11 @@ cacheSolve <- function(x, ...) {
 }
 
 #finally call the function, typing:
-#cacheSolve(m)
+cacheSolve(m)
+
 ##the function will return a matrix that is the inverse of 'x'
 
-
 #if you type again 
-#cacheSolve(m)
+cacheSolve(m)
 ##the function will return the value previouly calculated.
+
